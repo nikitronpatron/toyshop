@@ -1,0 +1,100 @@
+1.
+nikitron@nikitron-VirtualBox:~$ mkdir EX1
+nikitron@nikitron-VirtualBox:~$ cd EX1/
+nikitron@nikitron-VirtualBox:~/EX1$ mkdir toys_for_schoolchildren
+nikitron@nikitron-VirtualBox:~/EX1$ mkdir toys_for_children
+nikitron@nikitron-VirtualBox:~/EX1$ ls -l
+total 8
+drwxrwxr-x 2 nikitron nikitron 4096 мая 15 21:18 toys_for_children
+drwxrwxr-x 2 nikitron nikitron 4096 мая 15 21:18 toys_for_schoolchildren
+
+2.
+nikitron@nikitron-VirtualBox:~/EX1$ cd toys_for_schoolchildren/
+nikitron@nikitron-VirtualBox:~/EX1/toys_for_schoolchildren$ touch robots
+nikitron@nikitron-VirtualBox:~/EX1/toys_for_schoolchildren$ touch table_games
+nikitron@nikitron-VirtualBox:~/EX1/toys_for_schoolchildren$ touch constructor
+nikitron@nikitron-VirtualBox:~/EX1/toys_for_schoolchildren$ ls -l
+total 0
+-rw-rw-r-- 1 nikitron nikitron 0 мая 15 21:20 constructor
+-rw-rw-r-- 1 nikitron nikitron 0 мая 15 21:19 robots
+-rw-rw-r-- 1 nikitron nikitron 0 мая 15 21:20 table_games
+
+3.
+nikitron@nikitron-VirtualBox:~/EX1/toys_for_schoolchildren$ cd ..
+nikitron@nikitron-VirtualBox:~/EX1$ cd toys_for_children/
+nikitron@nikitron-VirtualBox:~/EX1/toys_for_children$ touch Dolls
+nikitron@nikitron-VirtualBox:~/EX1/toys_for_children$ touch Cars
+nikitron@nikitron-VirtualBox:~/EX1/toys_for_children$ touch Soft_toys
+nikitron@nikitron-VirtualBox:~/EX1/toys_for_children$ ls -l
+total 0
+-rw-rw-r-- 1 nikitron nikitron 0 мая 15 21:23 Cars
+-rw-rw-r-- 1 nikitron nikitron 0 мая 15 21:23 Dolls
+-rw-rw-r-- 1 nikitron nikitron 0 мая 15 21:23 Soft_toys
+
+4.
+nikitron@nikitron-VirtualBox:~/EX1/toys_for_children$ cd ..
+nikitron@nikitron-VirtualBox:~/EX1$ ls -l
+total 8
+drwxrwxr-x 2 nikitron nikitron 4096 мая 15 21:23 toys_for_children
+drwxrwxr-x 2 nikitron nikitron 4096 мая 15 21:20 toys_for_schoolchildren
+nikitron@nikitron-VirtualBox:~/EX1$ mkdir name_toys
+nikitron@nikitron-VirtualBox:~/EX1$ mv toys_for_schoolchildren/ toys_for_children/ name_toys/
+nikitron@nikitron-VirtualBox:~/EX1$ ls -l
+total 4
+drwxrwxr-x 4 nikitron nikitron 4096 мая 15 21:26 name_toys
+nikitron@nikitron-VirtualBox:~/EX1$ cd name_toys/
+nikitron@nikitron-VirtualBox:~/EX1/name_toys$ ls -l
+total 8
+drwxrwxr-x 2 nikitron nikitron 4096 мая 15 21:23 toys_for_children
+drwxrwxr-x 2 nikitron nikitron 4096 мая 15 21:20 toys_for_schoolchildren
+
+5.
+nikitron@nikitron-VirtualBox:~/EX1/name_toys$ cd ..
+nikitron@nikitron-VirtualBox:~/EX1$ ls -l
+total 4
+drwxrwxr-x 4 nikitron nikitron 4096 мая 15 21:26 name_toys
+nikitron@nikitron-VirtualBox:~/EX1$ mv name_toys/ toys/
+nikitron@nikitron-VirtualBox:~/EX1$ ls -l
+total 4
+drwxrwxr-x 4 nikitron nikitron 4096 мая 15 21:26 toys
+
+6.
+nikitron@nikitron-VirtualBox:~/EX1$ cd toys/
+nikitron@nikitron-VirtualBox:~/EX1/toys$ ls -l
+total 8
+drwxrwxr-x 2 nikitron nikitron 4096 мая 15 21:23 toys_for_children
+drwxrwxr-x 2 nikitron nikitron 4096 мая 15 21:20 toys_for_schoolchildren
+nikitron@nikitron-VirtualBox:~/EX1/toys$ cd toys_for_children/
+nikitron@nikitron-VirtualBox:~/EX1/toys/toys_for_children$ ls -l
+total 0
+-rw-rw-r-- 1 nikitron nikitron 0 мая 15 21:23 Cars
+-rw-rw-r-- 1 nikitron nikitron 0 мая 15 21:23 Dolls
+-rw-rw-r-- 1 nikitron nikitron 0 мая 15 21:23 Soft_toys
+nikitron@nikitron-VirtualBox:~/EX1/toys/toys_for_children$ cd ..
+nikitron@nikitron-VirtualBox:~/EX1/toys$ cd toys_for_schoolchildren/
+nikitron@nikitron-VirtualBox:~/EX1/toys/toys_for_schoolchildren$ ls -l
+total 0
+-rw-rw-r-- 1 nikitron nikitron 0 мая 15 21:20 constructor
+-rw-rw-r-- 1 nikitron nikitron 0 мая 15 21:19 robots
+-rw-rw-r-- 1 nikitron nikitron 0 мая 15 21:20 table_games
+nikitron@nikitron-VirtualBox:~/EX1/toys/toys_for_schoolchildren$
+
+7.
+nikitron@nikitron-VirtualBox:~$ sudo snap find opera
+[sudo] password for nikitron: 
+Name                             Version       Publisher          Notes    Summary
+opera                            98.0.4759.15  opera-software✓    -        Fast, secure, easy-to-use browser
+opera-beta                       98.0.4759.21  opera-software✓    -        Fast and secure web browser
+opera-developer                  99.0.4780.0   opera-software✓    -        Fast and secure web browser
+opera-proxy                      1.2.4         snawoot            -        Standalone Opera VPN proxies client.
+operator-builder                 0.5.0         vmware-tanzu-labs  -        A Kubebuilder plugin to accelerate the development of Kubernetes operators.
+xdman                            8.0.26        capecrusader-121   -        Xtreme Download Manager is a powerful tool to increase download speed up-to 500%.
+contasimple                      3.1.0         enriverd           -        Contasimple Desktop
+office365webdesktop              0.7.2         rafgui012          -        It is a simple desktop application for Office365 of the web version for linux
+the-battle-for-the-solar-system  1.5.0         marisag1967        -        2D mission-based space shooter
+devoperator                      1.7.1         art-hens-teeth     classic  DevOps tools
+nikitron@nikitron-VirtualBox:~$ sudo snap install opera
+Загрузить пакет "opera" (230) с канала "stable"                                                                                    80%  275kBopera 98.0.4759.15 from Opera (opera-software✓) installed
+nikitron@nikitron-VirtualBox:~$ sudo snap remove opera
+opera removed
+nikitron@nikitron-VirtualBox:~$
